@@ -1,7 +1,8 @@
 import styles from "./index.module.css";
 
-function Task({ id, toDo, isCompleted }) {
-  return <ul className={styles.tasksContainer}>{toDo}</ul>;
+function Task({ id, content, isCompleted }) {
+  console.log(content);
+  return <ul className={styles.container}>{content}</ul>;
 }
 
 export default Task;
